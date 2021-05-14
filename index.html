@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head> 
+<body>
+
+<div class="background">
+
+<div class="nav">
+	<a class="a active" href="#">HOME</a>
+	<a class="b" href="#">ABOUT ME</a>
+	<a class="c" href="#">GALLERY</a>
+	<a class="d" href="#">CONTACT US</a>
+</div>
+
+<div class="content">
+	
+    <div class="home">
+    	<h1>I am Santhosh M</h1>
+    	<h3>Web Designer</h3>
+    </div>
+
+    <div class="aboutus">
+    	<p><b>Hi Friends !..</b><br>
+    	 Welcome to <b>My Webpage</b>.
+    	 <br>I am BE Computer Science student from Vellalar Engineering College.Learning new codes everyday.Some kind of interest in designing web pages.Love hearing music.hobbies to play battle grounds.Spend time with family......<br>
+        Hi FRIENDS ,I am Santhosh M.I am an technician🥼,who loves to code🧑‍💻,do videos🎥,make apps📱,websites💻,learn something new everyday 🤖</p>
+    </div>
+    <div class="gallery">
+    	
+    	<div class="image">
+    		<img src="images/1.jpg" />
+    	</div>
+    	<div class="image">
+    		<img src="images/2.jpg" />
+    	</div>	
+    	<div class="image">
+    		<img src="images/3.jpg" />
+    	</div>		
+    	<div class="image">
+    		<img src="images/4.jpg" />
+    	</div>	
+    	<div class="image">
+    		<img src="images/5.jpg" />
+    	</div>	
+    	<div class="image">
+    		<img src="images/6.jpg" />
+    	</div>	
+    	<div class="image">
+    		<img src="images/7.jpg" />
+    	</div>	
+    	<div class="image">
+    		<img src="images/8.jpg" />
+    	</div>	
+    	<div class="image">
+    		<img src="images/9.jpg" />
+    	</div>	
+    </div>
+
+    <div class= "contactus">
+    	<div class="contactform">
+    		<form action="index.html" method="post">
+    			<input type="text" name="" class="inputtext" value="First Name">
+    			<input type="text" name="" class="inputtext" value="Last Name">
+    			<input type="text" name="" class="inputtext" value="Your Email">
+    			<textarea cols="4" rows="6" class="inputmessage">Your Message..!!!</textarea>
+    			<input type="button" name="" class="submitbutton" value="Submit">
+    		</form>
+    	</div>
+    </div>
+
+</div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('a').click(function(){
+            //alert("i am click");
+            var selected = $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+        });
+
+        var $a =$('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus');
+        $gallery = $('.gallery');
+        $contactus = $('.contactus');
+
+        $a.click(function() {
+        	$home.fadeIn();
+        	$aboutus.fadeOut();
+        	$gallery.fadeOut();
+        	$contactus.fadeOut();
+        });
+        $b.click(function(){
+        	$aboutus.fadeIn();
+        	$home.fadeOut();
+        	$gallery.fadeOut();
+        	$contactus.fadeOut();
+        });
+        $c.click(function(){
+            $gallery.fadeIn();
+            $home.fadeOut();
+            $aboutus.fadeOut();
+            $contactus.fadeOut();
+        });
+        $d.click(function(){
+        	$contactus.fadeIn();
+        	$home.fadeOut();
+        	$aboutus.fadeOut();
+        	$gallery.fadeOut();
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
+
+
+
